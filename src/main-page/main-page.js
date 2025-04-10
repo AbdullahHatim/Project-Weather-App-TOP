@@ -1,5 +1,6 @@
 import { WeatherManager } from '@/services/WeatherManager'
 import './main-page-style.css'
+import 'animate.css'
 
 // Initialize Content Div
 document.body.innerHTML = /* html */`
@@ -7,16 +8,42 @@ document.body.innerHTML = /* html */`
   <form class="searchForm">
     <input type="text" class="searchInput">
   </form>
-  <div class="weather"></div>
+  <div class="weather">
+    <div class='header'>
+     <div class="location-address"></div>
+     <div class="location-timezone"></div>
+    </div>
+  </div>
 </div> 
 `
 
 // Handle Form input
 const searchForm = document.querySelector('.searchForm')
 const searchInput = searchForm.querySelector('.searchInput')
+searchInput.focus()
+searchForm.addEventListener('submit', showWeatherInfo)
 
-searchForm.addEventListener('submit', (e) => {
-  e.preventDefault()
-  WeatherManager.getWeatherObject().then(console.log)
+async function showWeatherInfo (event) {
+  // Prevent Default Form Submit Behavior
+  event.preventDefault()
+
+  const weatherDiv = document.querySelector('.weather')
+  // Reset Animation state of .weather
+  weatherDiv.className = 'weather'
+
+  // Display Location Address & Timezone
+  try {
+    const weather = await WeatherManager.getWeatherObject(`${searchInput.value}`)
+    const headerDiv = weatherDiv.querySelector('.header')
+    const locationAddressDiv = headerDiv.querySelector('.location-address')
+    const locationTimeZoneDiv = headerDiv.querySelector('.location-timezone')
+
+    locationAddressDiv.textContent = weather.address
+    locationTimeZoneDiv.textContent = weather.timezone
+    console.log(weather)
+    weatherDiv.classList.add('show')
+  } catch (error) {
+
+  }
   console.log(searchInput.value)
-})
+}
