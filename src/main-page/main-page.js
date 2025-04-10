@@ -13,6 +13,8 @@ document.body.innerHTML = /* html */`
      <div class="location-address"></div>
      <div class="location-timezone"></div>
     </div>
+    <div class="hours"></div>
+    <div class="days"></div>
   </div>
 </div> 
 `
@@ -31,8 +33,8 @@ async function showWeatherInfo (event) {
   // Reset Animation state of .weather
   weatherDiv.className = 'weather'
 
-  // Display Location Address & Timezone
   try {
+    // Display Location Address & Timezone
     const weather = await WeatherManager.getWeatherObject(`${searchInput.value}`)
     const headerDiv = weatherDiv.querySelector('.header')
     const locationAddressDiv = headerDiv.querySelector('.location-address')
@@ -40,10 +42,41 @@ async function showWeatherInfo (event) {
 
     locationAddressDiv.textContent = weather.address
     locationTimeZoneDiv.textContent = weather.timezone
-    console.log(weather)
+
+    // Display Hours & Days
+    const hoursDiv = weatherDiv.querySelector('.hours')
+    hoursDiv.append(getHourlyWeatherComponent(weather.days[0].hours[0]))
+    hoursDiv.append(getHourlyWeatherComponent(weather.days[0].hours[9]))
     weatherDiv.classList.add('show')
+    console.log(weather)
   } catch (error) {
 
   }
   console.log(searchInput.value)
+}
+
+// Weather Card Components
+// {
+//   "datetime": "00:00:00",
+//   "temp": 84.1,
+//   "conditions": "Clear",
+//   "icon": "clear-night"
+// }
+const temperatureReferences = []
+
+function getHourlyWeatherComponent (hour) {
+  function getAmPmFormat (datetime) {
+    const [hour] = datetime.split(':')
+    if (hour > 12) return `${hour - 12}:00 PM`
+    return `${hour}:00 AM`
+  }
+  const div = document.createElement('div')
+  div.innerHTML = /* html */`
+   <p class="hour">${getAmPmFormat(hour.datetime)}</p>
+   <span class="icon">${hour.icon}</span>
+   <p class="temperature">${Math.ceil(WeatherManager.fahrenheitToCelsius(hour.temp))}</p>
+  `
+  const temperatureElement = div.querySelector('.temperature')
+  temperatureReferences.push(temperatureElement)
+  return div
 }
