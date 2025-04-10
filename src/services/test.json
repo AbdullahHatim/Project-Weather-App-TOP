@@ -1,0 +1,2346 @@
+{
+  "queryCost": 1,
+  "latitude": 24.6821,
+  "longitude": 46.6872,
+  "resolvedAddress": "السعودية",
+  "address": "Saudi Arabia",
+  "timezone": "Asia/Riyadh",
+  "tzoffset": 3,
+  "days": [
+    {
+      "datetime": "2025-04-10",
+      "temp": 91.2,
+      "sunrise": "05:36:02",
+      "sunset": "18:13:28",
+      "moonphase": 0.41,
+      "conditions": "Clear",
+      "icon": "clear-day",
+      "hours": [
+        {
+          "datetime": "00:00:00",
+          "temp": 84.1,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "01:00:00",
+          "temp": 84.1,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "02:00:00",
+          "temp": 82.3,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "03:00:00",
+          "temp": 82.3,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "04:00:00",
+          "temp": 80.5,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "05:00:00",
+          "temp": 78.7,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "06:00:00",
+          "temp": 76.9,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "07:00:00",
+          "temp": 84.1,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "08:00:00",
+          "temp": 89.5,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "09:00:00",
+          "temp": 93.1,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "10:00:00",
+          "temp": 96.5,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "11:00:00",
+          "temp": 98.3,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "12:00:00",
+          "temp": 99.4,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "13:00:00",
+          "temp": 100.3,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "14:00:00",
+          "temp": 101,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "15:00:00",
+          "temp": 101.2,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "16:00:00",
+          "temp": 101,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "17:00:00",
+          "temp": 100.1,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "18:00:00",
+          "temp": 97.4,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "19:00:00",
+          "temp": 94.9,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "20:00:00",
+          "temp": 92.9,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "21:00:00",
+          "temp": 91.5,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "22:00:00",
+          "temp": 90.1,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "23:00:00",
+          "temp": 87.9,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        }
+      ]
+    },
+    {
+      "datetime": "2025-04-11",
+      "temp": 88.8,
+      "sunrise": "05:35:05",
+      "sunset": "18:13:54",
+      "moonphase": 0.44,
+      "conditions": "Partially cloudy",
+      "icon": "partly-cloudy-day",
+      "hours": [
+        {
+          "datetime": "00:00:00",
+          "temp": 88.1,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "01:00:00",
+          "temp": 87.5,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "02:00:00",
+          "temp": 85.6,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "03:00:00",
+          "temp": 84.1,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "04:00:00",
+          "temp": 82.3,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "05:00:00",
+          "temp": 80.7,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "06:00:00",
+          "temp": 78.7,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "07:00:00",
+          "temp": 79.6,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "08:00:00",
+          "temp": 82.8,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "09:00:00",
+          "temp": 86.1,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "10:00:00",
+          "temp": 89,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "11:00:00",
+          "temp": 91.3,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "12:00:00",
+          "temp": 93.5,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "13:00:00",
+          "temp": 95.1,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "14:00:00",
+          "temp": 96,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "15:00:00",
+          "temp": 96.5,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "16:00:00",
+          "temp": 96.7,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "17:00:00",
+          "temp": 96.5,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "18:00:00",
+          "temp": 95.1,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "19:00:00",
+          "temp": 93.8,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "20:00:00",
+          "temp": 91.3,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "21:00:00",
+          "temp": 89.3,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "22:00:00",
+          "temp": 86.8,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "23:00:00",
+          "temp": 85,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        }
+      ]
+    },
+    {
+      "datetime": "2025-04-12",
+      "temp": 87,
+      "sunrise": "05:34:08",
+      "sunset": "18:14:20",
+      "moonphase": 0.48,
+      "conditions": "Clear",
+      "icon": "clear-day",
+      "hours": [
+        {
+          "datetime": "00:00:00",
+          "temp": 83.2,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "01:00:00",
+          "temp": 82.5,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "02:00:00",
+          "temp": 82.3,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "03:00:00",
+          "temp": 79.8,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "04:00:00",
+          "temp": 78.5,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "05:00:00",
+          "temp": 77.4,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "06:00:00",
+          "temp": 76.7,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "07:00:00",
+          "temp": 78.5,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "08:00:00",
+          "temp": 80.9,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "09:00:00",
+          "temp": 83.6,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "10:00:00",
+          "temp": 86.8,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "11:00:00",
+          "temp": 90.4,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "12:00:00",
+          "temp": 93.5,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "13:00:00",
+          "temp": 96.5,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "14:00:00",
+          "temp": 98.5,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "15:00:00",
+          "temp": 98.1,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "16:00:00",
+          "temp": 97.4,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "17:00:00",
+          "temp": 96.2,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "18:00:00",
+          "temp": 93.8,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "19:00:00",
+          "temp": 90.8,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "20:00:00",
+          "temp": 88.4,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "21:00:00",
+          "temp": 86.8,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "22:00:00",
+          "temp": 85,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "23:00:00",
+          "temp": 83,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        }
+      ]
+    },
+    {
+      "datetime": "2025-04-13",
+      "temp": 83,
+      "sunrise": "05:33:11",
+      "sunset": "18:14:46",
+      "moonphase": 0.5,
+      "conditions": "Clear",
+      "icon": "clear-day",
+      "hours": [
+        {
+          "datetime": "00:00:00",
+          "temp": 81.6,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "01:00:00",
+          "temp": 79.4,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "02:00:00",
+          "temp": 76.9,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "03:00:00",
+          "temp": 75.8,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "04:00:00",
+          "temp": 72.8,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "05:00:00",
+          "temp": 71.7,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "06:00:00",
+          "temp": 71.5,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "07:00:00",
+          "temp": 73.3,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "08:00:00",
+          "temp": 76.2,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "09:00:00",
+          "temp": 80.3,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "10:00:00",
+          "temp": 83.7,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "11:00:00",
+          "temp": 86.8,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "12:00:00",
+          "temp": 88.6,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "13:00:00",
+          "temp": 90.6,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "14:00:00",
+          "temp": 92.2,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "15:00:00",
+          "temp": 92.9,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "16:00:00",
+          "temp": 92.9,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "17:00:00",
+          "temp": 92.2,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "18:00:00",
+          "temp": 90.4,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "19:00:00",
+          "temp": 88.1,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "20:00:00",
+          "temp": 86.3,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "21:00:00",
+          "temp": 85,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "22:00:00",
+          "temp": 83.6,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "23:00:00",
+          "temp": 80.3,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        }
+      ]
+    },
+    {
+      "datetime": "2025-04-14",
+      "temp": 86.1,
+      "sunrise": "05:32:15",
+      "sunset": "18:15:13",
+      "moonphase": 0.55,
+      "conditions": "Partially cloudy",
+      "icon": "partly-cloudy-day",
+      "hours": [
+        {
+          "datetime": "00:00:00",
+          "temp": 77.8,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "01:00:00",
+          "temp": 76.6,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "02:00:00",
+          "temp": 75.8,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "03:00:00",
+          "temp": 74.6,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "04:00:00",
+          "temp": 73.3,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "05:00:00",
+          "temp": 72.9,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "06:00:00",
+          "temp": 72.8,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "07:00:00",
+          "temp": 74.9,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "08:00:00",
+          "temp": 78.5,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "09:00:00",
+          "temp": 83,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "10:00:00",
+          "temp": 88.1,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "11:00:00",
+          "temp": 92.7,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "12:00:00",
+          "temp": 97.2,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "13:00:00",
+          "temp": 99.8,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "14:00:00",
+          "temp": 100.5,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "15:00:00",
+          "temp": 100.7,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "16:00:00",
+          "temp": 100.3,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "17:00:00",
+          "temp": 98.9,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "18:00:00",
+          "temp": 94,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "19:00:00",
+          "temp": 90.1,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "20:00:00",
+          "temp": 87.9,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "21:00:00",
+          "temp": 86.4,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "22:00:00",
+          "temp": 85.4,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "23:00:00",
+          "temp": 83.6,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        }
+      ]
+    },
+    {
+      "datetime": "2025-04-15",
+      "temp": 85,
+      "sunrise": "05:31:19",
+      "sunset": "18:15:39",
+      "moonphase": 0.58,
+      "conditions": "Clear",
+      "icon": "clear-day",
+      "hours": [
+        {
+          "datetime": "00:00:00",
+          "temp": 81.4,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "01:00:00",
+          "temp": 79.2,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "02:00:00",
+          "temp": 77.4,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "03:00:00",
+          "temp": 75.5,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "04:00:00",
+          "temp": 74.5,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "05:00:00",
+          "temp": 73.4,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "06:00:00",
+          "temp": 72.4,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "07:00:00",
+          "temp": 76.2,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "08:00:00",
+          "temp": 80,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "09:00:00",
+          "temp": 83.7,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "10:00:00",
+          "temp": 86.4,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "11:00:00",
+          "temp": 89.1,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "12:00:00",
+          "temp": 91.8,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "13:00:00",
+          "temp": 93.1,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "14:00:00",
+          "temp": 94.2,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "15:00:00",
+          "temp": 95.4,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "16:00:00",
+          "temp": 94.7,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "17:00:00",
+          "temp": 94,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "18:00:00",
+          "temp": 93.3,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "19:00:00",
+          "temp": 91,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "20:00:00",
+          "temp": 88.7,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "21:00:00",
+          "temp": 86.4,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "22:00:00",
+          "temp": 84.7,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "23:00:00",
+          "temp": 83,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        }
+      ]
+    },
+    {
+      "datetime": "2025-04-16",
+      "temp": 84.5,
+      "sunrise": "05:30:24",
+      "sunset": "18:16:06",
+      "moonphase": 0.61,
+      "conditions": "Clear",
+      "icon": "clear-day",
+      "hours": [
+        {
+          "datetime": "00:00:00",
+          "temp": 81.2,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "01:00:00",
+          "temp": 79.6,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "02:00:00",
+          "temp": 77.9,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "03:00:00",
+          "temp": 76.2,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "04:00:00",
+          "temp": 75.7,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "05:00:00",
+          "temp": 75.2,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "06:00:00",
+          "temp": 74.7,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "07:00:00",
+          "temp": 77.9,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "08:00:00",
+          "temp": 81.1,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "09:00:00",
+          "temp": 84.3,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "10:00:00",
+          "temp": 86.6,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "11:00:00",
+          "temp": 88.9,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "12:00:00",
+          "temp": 91.1,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "13:00:00",
+          "temp": 92.4,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "14:00:00",
+          "temp": 93.7,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "15:00:00",
+          "temp": 94.9,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "16:00:00",
+          "temp": 93.8,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "17:00:00",
+          "temp": 92.8,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "18:00:00",
+          "temp": 91.7,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "19:00:00",
+          "temp": 88.8,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "20:00:00",
+          "temp": 85.9,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "21:00:00",
+          "temp": 83,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "22:00:00",
+          "temp": 81.5,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "23:00:00",
+          "temp": 80,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        }
+      ]
+    },
+    {
+      "datetime": "2025-04-17",
+      "temp": 81.6,
+      "sunrise": "05:29:30",
+      "sunset": "18:16:33",
+      "moonphase": 0.65,
+      "conditions": "Clear",
+      "icon": "clear-day",
+      "hours": [
+        {
+          "datetime": "00:00:00",
+          "temp": 78.5,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "01:00:00",
+          "temp": 76.8,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "02:00:00",
+          "temp": 75.2,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "03:00:00",
+          "temp": 73.5,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "04:00:00",
+          "temp": 72.4,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "05:00:00",
+          "temp": 71.3,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "06:00:00",
+          "temp": 70.2,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "07:00:00",
+          "temp": 73.4,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "08:00:00",
+          "temp": 76.5,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "09:00:00",
+          "temp": 79.6,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "10:00:00",
+          "temp": 82.3,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "11:00:00",
+          "temp": 85,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "12:00:00",
+          "temp": 87.7,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "13:00:00",
+          "temp": 89.2,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "14:00:00",
+          "temp": 90.6,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "15:00:00",
+          "temp": 92,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "16:00:00",
+          "temp": 91.2,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "17:00:00",
+          "temp": 90.3,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "18:00:00",
+          "temp": 89.5,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "19:00:00",
+          "temp": 87.1,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "20:00:00",
+          "temp": 84.6,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "21:00:00",
+          "temp": 82.1,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "22:00:00",
+          "temp": 80.7,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "23:00:00",
+          "temp": 79.3,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        }
+      ]
+    },
+    {
+      "datetime": "2025-04-18",
+      "temp": 80.7,
+      "sunrise": "05:28:36",
+      "sunset": "18:17:00",
+      "moonphase": 0.68,
+      "conditions": "Clear",
+      "icon": "clear-day",
+      "hours": [
+        {
+          "datetime": "00:00:00",
+          "temp": 77.8,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "01:00:00",
+          "temp": 76.1,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "02:00:00",
+          "temp": 74.3,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "03:00:00",
+          "temp": 72.6,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "04:00:00",
+          "temp": 71.8,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "05:00:00",
+          "temp": 70.9,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "06:00:00",
+          "temp": 70.1,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "07:00:00",
+          "temp": 73.3,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "08:00:00",
+          "temp": 76.6,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "09:00:00",
+          "temp": 79.8,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "10:00:00",
+          "temp": 82.2,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "11:00:00",
+          "temp": 84.7,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "12:00:00",
+          "temp": 87.2,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "13:00:00",
+          "temp": 88.3,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "14:00:00",
+          "temp": 89.3,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "15:00:00",
+          "temp": 90.4,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "16:00:00",
+          "temp": 89.5,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "17:00:00",
+          "temp": 88.6,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "18:00:00",
+          "temp": 87.7,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "19:00:00",
+          "temp": 85.4,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "20:00:00",
+          "temp": 83.1,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "21:00:00",
+          "temp": 80.9,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "22:00:00",
+          "temp": 79.3,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "23:00:00",
+          "temp": 77.7,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        }
+      ]
+    },
+    {
+      "datetime": "2025-04-19",
+      "temp": 82,
+      "sunrise": "05:27:43",
+      "sunset": "18:17:27",
+      "moonphase": 0.71,
+      "conditions": "Clear",
+      "icon": "clear-day",
+      "hours": [
+        {
+          "datetime": "00:00:00",
+          "temp": 76.2,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "01:00:00",
+          "temp": 75,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "02:00:00",
+          "temp": 73.8,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "03:00:00",
+          "temp": 72.6,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "04:00:00",
+          "temp": 71.9,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "05:00:00",
+          "temp": 71.3,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "06:00:00",
+          "temp": 70.6,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "07:00:00",
+          "temp": 74,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "08:00:00",
+          "temp": 77.5,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "09:00:00",
+          "temp": 80.9,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "10:00:00",
+          "temp": 83.5,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "11:00:00",
+          "temp": 86.2,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "12:00:00",
+          "temp": 88.8,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "13:00:00",
+          "temp": 90,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "14:00:00",
+          "temp": 91.2,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "15:00:00",
+          "temp": 92.4,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "16:00:00",
+          "temp": 91.7,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "17:00:00",
+          "temp": 91.1,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "18:00:00",
+          "temp": 90.4,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "19:00:00",
+          "temp": 88,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "20:00:00",
+          "temp": 85.6,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "21:00:00",
+          "temp": 83.2,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "22:00:00",
+          "temp": 81.8,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "23:00:00",
+          "temp": 80.4,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        }
+      ]
+    },
+    {
+      "datetime": "2025-04-20",
+      "temp": 85.3,
+      "sunrise": "05:26:50",
+      "sunset": "18:17:54",
+      "moonphase": 0.75,
+      "conditions": "Partially cloudy",
+      "icon": "partly-cloudy-day",
+      "hours": [
+        {
+          "datetime": "00:00:00",
+          "temp": 79.1,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "01:00:00",
+          "temp": 78,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "02:00:00",
+          "temp": 76.9,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "03:00:00",
+          "temp": 75.8,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "04:00:00",
+          "temp": 75.2,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "05:00:00",
+          "temp": 74.5,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "06:00:00",
+          "temp": 73.8,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "07:00:00",
+          "temp": 77.2,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "08:00:00",
+          "temp": 80.6,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "09:00:00",
+          "temp": 83.9,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "10:00:00",
+          "temp": 86.7,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "11:00:00",
+          "temp": 89.6,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "12:00:00",
+          "temp": 92.4,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "13:00:00",
+          "temp": 93.5,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "14:00:00",
+          "temp": 94.7,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "15:00:00",
+          "temp": 95.8,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "16:00:00",
+          "temp": 95.2,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "17:00:00",
+          "temp": 94.6,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "18:00:00",
+          "temp": 94,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "19:00:00",
+          "temp": 91.4,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "20:00:00",
+          "temp": 88.9,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "21:00:00",
+          "temp": 86.3,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "22:00:00",
+          "temp": 84.8,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "23:00:00",
+          "temp": 83.3,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        }
+      ]
+    },
+    {
+      "datetime": "2025-04-21",
+      "temp": 89.1,
+      "sunrise": "05:25:58",
+      "sunset": "18:18:22",
+      "moonphase": 0.75,
+      "conditions": "Partially cloudy",
+      "icon": "partly-cloudy-day",
+      "hours": [
+        {
+          "datetime": "00:00:00",
+          "temp": 81.8,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "01:00:00",
+          "temp": 80.6,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "02:00:00",
+          "temp": 79.5,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "03:00:00",
+          "temp": 78.3,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "04:00:00",
+          "temp": 78.2,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "05:00:00",
+          "temp": 78,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "06:00:00",
+          "temp": 77.8,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "07:00:00",
+          "temp": 81.4,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "08:00:00",
+          "temp": 85,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "09:00:00",
+          "temp": 88.6,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "10:00:00",
+          "temp": 91.2,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "11:00:00",
+          "temp": 93.8,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "12:00:00",
+          "temp": 96.3,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "13:00:00",
+          "temp": 97.8,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "14:00:00",
+          "temp": 99.3,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "15:00:00",
+          "temp": 100.8,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "16:00:00",
+          "temp": 99.5,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "17:00:00",
+          "temp": 98.2,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "18:00:00",
+          "temp": 96.9,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "19:00:00",
+          "temp": 95,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "20:00:00",
+          "temp": 93.1,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "21:00:00",
+          "temp": 91.1,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "22:00:00",
+          "temp": 89.4,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "23:00:00",
+          "temp": 87.8,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        }
+      ]
+    },
+    {
+      "datetime": "2025-04-22",
+      "temp": 92.9,
+      "sunrise": "05:25:07",
+      "sunset": "18:18:49",
+      "moonphase": 0.82,
+      "conditions": "Partially cloudy",
+      "icon": "partly-cloudy-day",
+      "hours": [
+        {
+          "datetime": "00:00:00",
+          "temp": 86.1,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "01:00:00",
+          "temp": 84.7,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "02:00:00",
+          "temp": 83.3,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "03:00:00",
+          "temp": 81.9,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "04:00:00",
+          "temp": 81.7,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "05:00:00",
+          "temp": 81.5,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "06:00:00",
+          "temp": 81.2,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "07:00:00",
+          "temp": 85.3,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "08:00:00",
+          "temp": 89.4,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "09:00:00",
+          "temp": 93.5,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "10:00:00",
+          "temp": 96.6,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "11:00:00",
+          "temp": 99.7,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "12:00:00",
+          "temp": 102.8,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "13:00:00",
+          "temp": 103.3,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "14:00:00",
+          "temp": 103.8,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "15:00:00",
+          "temp": 104.3,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "16:00:00",
+          "temp": 102.7,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "17:00:00",
+          "temp": 101,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "18:00:00",
+          "temp": 99.4,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "19:00:00",
+          "temp": 97.6,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "20:00:00",
+          "temp": 95.8,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "21:00:00",
+          "temp": 94,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "22:00:00",
+          "temp": 91.7,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "23:00:00",
+          "temp": 89.3,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        }
+      ]
+    },
+    {
+      "datetime": "2025-04-23",
+      "temp": 93.9,
+      "sunrise": "05:24:17",
+      "sunset": "18:19:17",
+      "moonphase": 0.85,
+      "conditions": "Partially cloudy",
+      "icon": "partly-cloudy-day",
+      "hours": [
+        {
+          "datetime": "00:00:00",
+          "temp": 87,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "01:00:00",
+          "temp": 86.7,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "02:00:00",
+          "temp": 86.5,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "03:00:00",
+          "temp": 86.3,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "04:00:00",
+          "temp": 85.7,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "05:00:00",
+          "temp": 85.1,
+          "conditions": "Clear",
+          "icon": "clear-night"
+        },
+        {
+          "datetime": "06:00:00",
+          "temp": 84.5,
+          "conditions": "Clear",
+          "icon": "clear-day"
+        },
+        {
+          "datetime": "07:00:00",
+          "temp": 88.4,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "08:00:00",
+          "temp": 92.4,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "09:00:00",
+          "temp": 96.3,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "10:00:00",
+          "temp": 98.4,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "11:00:00",
+          "temp": 100.5,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-day"
+        },
+        {
+          "datetime": "12:00:00",
+          "temp": 102.6,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "13:00:00",
+          "temp": 103.1,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "14:00:00",
+          "temp": 103.6,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "15:00:00",
+          "temp": 104.1,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "16:00:00",
+          "temp": 102.1,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "17:00:00",
+          "temp": 100,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "18:00:00",
+          "temp": 98,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "19:00:00",
+          "temp": 96.2,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "20:00:00",
+          "temp": 94.4,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "21:00:00",
+          "temp": 92.6,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "22:00:00",
+          "temp": 90.5,
+          "conditions": "Partially cloudy",
+          "icon": "partly-cloudy-night"
+        },
+        {
+          "datetime": "23:00:00",
+          "temp": 88.5,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        }
+      ]
+    },
+    {
+      "datetime": "2025-04-24",
+      "temp": 88.4,
+      "sunrise": "05:23:27",
+      "sunset": "18:19:45",
+      "moonphase": 0.88,
+      "conditions": "Overcast",
+      "icon": "cloudy",
+      "hours": [
+        {
+          "datetime": "00:00:00",
+          "temp": 86.4,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "01:00:00",
+          "temp": 84.9,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "02:00:00",
+          "temp": 83.3,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "03:00:00",
+          "temp": 81.8,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "04:00:00",
+          "temp": 81.1,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "05:00:00",
+          "temp": 80.3,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "06:00:00",
+          "temp": 79.6,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "07:00:00",
+          "temp": 82.7,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "08:00:00",
+          "temp": 85.8,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "09:00:00",
+          "temp": 89,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "10:00:00",
+          "temp": 91.3,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "11:00:00",
+          "temp": 93.6,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "12:00:00",
+          "temp": 96,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "13:00:00",
+          "temp": 96.1,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "14:00:00",
+          "temp": 96.2,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "15:00:00",
+          "temp": 96.3,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "16:00:00",
+          "temp": 94.9,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "17:00:00",
+          "temp": 93.5,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "18:00:00",
+          "temp": 92,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "19:00:00",
+          "temp": 90.4,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "20:00:00",
+          "temp": 88.8,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "21:00:00",
+          "temp": 87.2,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "22:00:00",
+          "temp": 85.5,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        },
+        {
+          "datetime": "23:00:00",
+          "temp": 83.8,
+          "conditions": "Overcast",
+          "icon": "cloudy"
+        }
+      ]
+    }
+  ],
+  "alerts": [],
+  "currentConditions": {
+    "datetime": "10:00:00",
+    "temp": 96.7,
+    "conditions": "Clear",
+    "icon": "clear-day",
+    "sunrise": "05:36:02",
+    "sunset": "18:13:28",
+    "moonphase": 0.41
+  }
+}
