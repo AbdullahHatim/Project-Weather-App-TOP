@@ -19,7 +19,9 @@
     "deploy": "nu \"C:/scripts/deploy.nu\""
   },
   "browserslist": [
-    "defaults and fully supports es6-module",
-    "maintained node versions"
-  ]
+    "> 0.2% and not dead"
+  ],
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
 }
