@@ -15,8 +15,12 @@ document.body.innerHTML = /* html */`
      <div class="location-address"></div>
      <div class="location-timezone"></div>
     </div>
-    <div class="hours"></div>
-    <div class="days"></div>
+    <div class="hours-container">
+      <div class="hours"></div>
+    </div>
+    <div class="days-container">
+      <div class="days"></div>
+    </div>
   </div>
 </div> 
 `
@@ -46,13 +50,19 @@ async function showWeatherInfo (event) {
     locationTimeZoneDiv.textContent = weather.timezone
 
     // Display Hours & Days
+    const daysDiv = weatherDiv.querySelector('.days')
     const hoursDiv = weatherDiv.querySelector('.hours')
-    hoursDiv.append(getHourlyWeatherComponent(weather.days[0].hours[0]))
-    hoursDiv.append(getHourlyWeatherComponent(weather.days[0].hours[9]))
+    weather.days.forEach(day => {
+      daysDiv.append(getDailyWeatherComponent(day))
+    })
+    weather.days[0].hours.forEach(hour => {
+      hoursDiv.append(getHourlyWeatherComponent(hour))
+    })
+
     weatherDiv.classList.add('show')
     console.log(weather)
   } catch (error) {
-
+    console.log(error)
   }
   console.log(searchInput.value)
 }
@@ -96,6 +106,43 @@ function getHourlyWeatherComponent (hour) {
   button.className = 'hour'
   return button
 }
+function getDailyWeatherComponent (day) {
+  function getDateFormat (datetime) {
+    // "2025-04-10"
+    const monthDay = datetime.slice(-5)
+    const formatted = monthDay.split('-').join('/')
+    return formatted
+  }
+
+  const formattedDate = getDateFormat(day.datetime)
+  const icon = require(`@/assets/weather-icons/${day.icon}.svg`)
+  const temp = Math.round(day.temp)
+
+  const button = document.createElement('button')
+  button.innerHTML = /* html */`
+   <p class="time">${formattedDate}</p>
+   <span class="icon" ><img src=${icon} alt="${day.icon}"></span>
+   <p class="temperature" data-temp-unit="F">${temp}</p>
+  `
+
+  const temperatureElement = button.querySelector('.temperature')
+  temperatureReferences.push(temperatureElement)
+
+  // Publish Hourly Weather Formatted Data
+  const formattedData = {
+    formattedDate,
+    icon,
+    temp
+  }
+  button.addEventListener('click', (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    PubSub.publish(TOPICS.dailyWeather, formattedData)
+  })
+
+  button.className = 'day'
+  return button
+}
 
 // Converter Functions C -> F, F -> C
 function setTemperatureToCelsius () {
@@ -114,7 +161,7 @@ function setTemperatureToFahrenheit () {
   })
 }
 
-// Misc: getAmPmFormat
+// Misc: getAmPmFormat // TODO: Put this back inside getHourlyWeatherComponent, its only used there
 function getAmPmFormat (datetime) {
   const [hour] = datetime.split(':')
   if (hour > 12) return { time: `${hour - 12}:00`, end: 'PM' }
