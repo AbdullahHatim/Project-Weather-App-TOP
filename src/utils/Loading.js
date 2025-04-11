@@ -22,8 +22,6 @@ export class Loading {
           iteration = iteration % 4
           dots.textContent = '.'.repeat(iteration)
           iteration++
-
-          console.log('1 second')
         }
         window.requestAnimationFrame(animateLoading)
       }
