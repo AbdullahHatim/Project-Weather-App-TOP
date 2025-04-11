@@ -15,7 +15,6 @@ document.body.innerHTML = /* html */`
  <div class="weather"></div> 
 </div> 
 `
-const content = document.querySelector('#content')
 
 // Handle Form input
 const searchForm = document.querySelector('.searchForm')
@@ -25,14 +24,12 @@ searchForm.addEventListener('submit', showWeatherInfo)
 
 async function showWeatherInfo (event) {
   // Prevent Default Form Submit Behavior
-  event.preventDefault()
+  if (event) event.preventDefault()
   resetWeatherComponent()
   const weatherDiv = document.querySelector('.weather')
   try {
-    // Testing
     showLoading()
-    await new Promise(r => (setTimeout(() => { console.log('done'); r() }, 1000)))
-    // End: Testing
+    await new Promise(r => (setTimeout(r, 300)))
     // Display Location Address & Timezone
     const weather = await WeatherManager.getWeatherObject(`${searchInput.value}`)
 
@@ -51,7 +48,7 @@ async function showWeatherInfo (event) {
     weather.days.forEach(day => {
       daysDiv.append(getDailyWeatherComponent(day))
     })
-    weather.days[0].hours.forEach(hour => {
+    weather.nowPlus24Hours.forEach(hour => {
       hoursDiv.append(getHourlyWeatherComponent(hour))
     })
 
@@ -61,7 +58,6 @@ async function showWeatherInfo (event) {
     loadingError('Location Not Found!')
     console.log(error)
   }
-  console.log(searchInput.value)
 }
 // Weather Main Compoenent
 function resetWeatherComponent () {
@@ -97,13 +93,6 @@ function loadingError (msg) {
   loadingObj.showError(msg)
 }
 
-// Weather Card Components
-// {
-//   "datetime": "00:00:00",
-//   "temp": 84.1,
-//   "conditions": "Clear",
-//   "icon": "clear-night"
-// }
 const temperatureReferences = []
 
 function getHourlyWeatherComponent (hour) {
@@ -199,12 +188,9 @@ function setTemperatureToFahrenheit () {
   })
 }
 
-// Misc: getAmPmFormat // TODO: Put this back inside getHourlyWeatherComponent, its only used there
+// Misc: getAmPmFormat
 function getAmPmFormat (datetime) {
   const [hour] = datetime.split(':')
   if (hour > 12) return { time: `${hour - 12}:00`, end: 'PM' }
   return { time: `${hour}:00`, end: 'AM' }
 }
-
-// Tests
-PubSub.subscribe(TOPICS.hourlyWeather, (_, data) => console.log(data))
