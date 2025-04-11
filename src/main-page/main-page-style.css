@@ -136,3 +136,14 @@
     }
   }
 }
+
+@layer weather-icon-specific-size-fixes {
+  .icon {
+    * {
+    }
+    img[alt='partly-cloudy-night'],
+    img[alt='partly-cloudy-day'] {
+      scale: 2;
+    }
+  }
+}
