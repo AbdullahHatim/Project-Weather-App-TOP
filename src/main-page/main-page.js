@@ -84,7 +84,7 @@ function getHourlyWeatherComponent (hour) {
 }
 
 // Converter Functions C -> F, F -> C
-function setTempratureToCelsius () {
+function setTemperatureToCelsius () {
   temperatureReferences.forEach(element => {
     const temp = WeatherManager.fahrenheitToCelsius(element.textContent)
     element.textContent = temp
@@ -92,7 +92,7 @@ function setTempratureToCelsius () {
   })
 }
 
-function setTempratureToFahrenheit () {
+function setTemperatureToFahrenheit () {
   temperatureReferences.forEach(element => {
     const temp = WeatherManager.celsiusToFahrenheit(element.textContent)
     element.textContent = temp
