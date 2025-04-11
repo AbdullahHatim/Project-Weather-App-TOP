@@ -13,6 +13,25 @@
     box-sizing: border-box;
   }
 }
+@layer general {
+  ::-webkit-scrollbar {
+    width: 12px; /* Vertical scrollbar width */
+    height: 5px; /* Horizontal scrollbar height */
+    overflow: hidden;
+  }
+  ::-webkit-scrollbar-button {
+    display: none;
+    background-color: red;
+  }
+  ::-webkit-scrollbar-track {
+    display: none;
+    background-color: red;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #9c9c9c46;
+  }
+}
 @layer main-content {
   #content {
     height: 100%;
@@ -74,7 +93,7 @@
       width: 100%;
       height: 100px;
       border-radius: 20px;
-
+      overflow: hidden;
       .hours,
       .days {
         width: max-content;
