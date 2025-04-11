@@ -1,4 +1,6 @@
 import { WeatherManager } from '@/services/WeatherManager'
+import PubSub from 'pubsub-js'
+import { TOPICS } from '@/utils/TOPICS'
 import './main-page-style.css'
 import 'animate.css'
 
@@ -65,22 +67,31 @@ async function showWeatherInfo (event) {
 const temperatureReferences = []
 
 function getHourlyWeatherComponent (hour) {
-  function getAmPmFormat (datetime) {
-    const [hour] = datetime.split(':')
-    if (hour > 12) return { time: `${hour - 12}:00`, end: 'PM' }
-    return { time: `${hour}:00`, end: 'AM' }
-  }
-  const button = document.createElement('button')
   const formattedTime = getAmPmFormat(hour.datetime)
-
   const icon = require(`@/assets/weather-icons/${hour.icon}.svg`)
+  const temp = Math.round(hour.temp)
+
+  const button = document.createElement('button')
   button.innerHTML = /* html */`
    <p class="time" data-end="${formattedTime.end}">${formattedTime.time}</p>
    <span class="icon" ><img src=${icon} alt="${hour.icon}"></span>
-   <p class="temperature" data-temp-unit="F">${Math.round(hour.temp)}</p>
+   <p class="temperature" data-temp-unit="F">${temp}</p>
   `
+
   const temperatureElement = button.querySelector('.temperature')
   temperatureReferences.push(temperatureElement)
+
+  // Publish Hourly Weather Formatted Data
+  const formattedData = {
+    formattedTime,
+    icon,
+    temp
+  }
+  button.addEventListener('click', (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    PubSub.publish(TOPICS.hourlyWeather, formattedData)
+  })
 
   button.className = 'hour'
   return button
@@ -102,3 +113,13 @@ function setTemperatureToFahrenheit () {
     element.dataset.tempUnit = 'F'
   })
 }
+
+// Misc: getAmPmFormat
+function getAmPmFormat (datetime) {
+  const [hour] = datetime.split(':')
+  if (hour > 12) return { time: `${hour - 12}:00`, end: 'PM' }
+  return { time: `${hour}:00`, end: 'AM' }
+}
+
+// Tests
+PubSub.subscribe(TOPICS.hourlyWeather, (_, data) => console.log(data))
