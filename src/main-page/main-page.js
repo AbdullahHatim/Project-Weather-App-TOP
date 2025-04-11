@@ -15,6 +15,7 @@ document.body.innerHTML = /* html */`
      <div class="location-address"></div>
      <div class="location-timezone"></div>
     </div>
+   <div class="main"></div> 
     <div class="hours-container">
       <div class="hours"></div>
     </div>
@@ -59,6 +60,7 @@ async function showWeatherInfo (event) {
       hoursDiv.append(getHourlyWeatherComponent(hour))
     })
 
+    initMainDailyComponent()
     weatherDiv.classList.add('show')
     console.log(weather)
   } catch (error) {
@@ -118,9 +120,11 @@ function getDailyWeatherComponent (day) {
   temperatureReferences.push(temperatureElement)
 
   // Publish Hourly Weather Formatted Data
+  const info = day.icon.split('-').join(' ')
   const formattedData = {
     formattedDate,
     icon,
+    info,
     temp
   }
   button.addEventListener('click', (e) => {
@@ -133,6 +137,20 @@ function getDailyWeatherComponent (day) {
   return button
 }
 
+function initMainDailyComponent () {
+  const mainDiv = document.querySelector('.main')
+  const firstDay = document.querySelector('.day')
+  PubSub.subscribe(TOPICS.dailyWeather, (_, formattedData) => {
+    const { formattedDate, icon, info, temp } = formattedData
+    mainDiv.innerHTML = /* html */`
+    <p class="time">${formattedDate}</p>
+    <span class="icon" ><img src=${icon} alt="${info}.icon"></span>
+    <p class="condition">${info}</p>
+    <p class="temperature" data-temp-unit="F">${temp}</p>
+    `
+  })
+  firstDay.click()
+}
 // Converter Functions C -> F, F -> C
 function setTemperatureToCelsius () {
   temperatureReferences.forEach(element => {

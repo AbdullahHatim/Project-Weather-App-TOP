@@ -34,7 +34,7 @@
 }
 @layer main-content {
   #content {
-    height: 100%;
+    min-height: 100svh;
     width: 100%;
     padding: 1em;
     display: flex;
@@ -62,7 +62,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 0;
+    height: max-content;
     overflow: hidden;
     width: 100%;
     border-radius: 50px;
@@ -103,6 +103,24 @@
 
         overflow-y: hidden;
         overflow-x: auto;
+      }
+    }
+    .main {
+      height: 40%;
+      font-size: 1.3em;
+      color: var(--primary-text-color);
+      .condition {
+        text-transform: capitalize;
+      }
+      .temperature {
+        position: relative;
+        &::after {
+          color: var(--secondary-text-color);
+          position: absolute;
+          content: attr(data-temp-unit);
+          text-transform: uppercase;
+          font-size: 0.7em;
+        }
       }
     }
   }
