@@ -72,11 +72,30 @@ function getHourlyWeatherComponent (hour) {
   }
   const div = document.createElement('div')
   div.innerHTML = /* html */`
-   <p class="hour">${getAmPmFormat(hour.datetime)}</p>
+   <p class="time">${getAmPmFormat(hour.datetime)}</p>
    <span class="icon">${hour.icon}</span>
-   <p class="temperature">${Math.ceil(WeatherManager.fahrenheitToCelsius(hour.temp))}</p>
+   <p class="temperature" data-temp-unit="F">${Math.round(hour.temp)}</p>
   `
   const temperatureElement = div.querySelector('.temperature')
   temperatureReferences.push(temperatureElement)
+  console.log(temperatureElement.dataset.tempUnit)
+  div.className = 'hour'
   return div
+}
+
+// Converter Functions C -> F, F -> C
+function setTempratureToCelsius () {
+  temperatureReferences.forEach(element => {
+    const temp = WeatherManager.fahrenheitToCelsius(element.textContent)
+    element.textContent = temp
+    element.dataset.tempUnit = 'C'
+  })
+}
+
+function setTempratureToFahrenheit () {
+  temperatureReferences.forEach(element => {
+    const temp = WeatherManager.celsiusToFahrenheit(element.textContent)
+    element.textContent = temp
+    element.dataset.tempUnit = 'F'
+  })
 }
