@@ -15,6 +15,7 @@
 }
 @layer general {
   ::-webkit-scrollbar {
+    position: absolute;
     width: 12px; /* Vertical scrollbar width */
     height: 5px; /* Horizontal scrollbar height */
     overflow: hidden;
@@ -35,6 +36,7 @@
 @layer main-content {
   #content {
     min-height: 100svh;
+    max-width: 100%;
     width: 100%;
     padding: 1em;
     display: flex;
@@ -190,6 +192,23 @@
     img[alt='partly-cloudy-night'],
     img[alt='partly-cloudy-day'] {
       scale: 2;
+    }
+  }
+}
+
+@layer loading {
+  .loading-container {
+    color: rgba(128, 128, 128, 0.795);
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+    .loading {
+      span {
+        position: absolute;
+      }
+      &.error {
+        color: red;
+      }
     }
   }
 }

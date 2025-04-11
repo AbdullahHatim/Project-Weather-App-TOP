@@ -1,6 +1,7 @@
 import { WeatherManager } from '@/services/WeatherManager'
 import PubSub from 'pubsub-js'
 import { TOPICS } from '@/utils/TOPICS'
+import { Loading } from '@/utils/Loading'
 import './main-page-style.css'
 import 'animate.css'
 
@@ -10,6 +11,7 @@ document.body.innerHTML = /* html */`
   <form class="searchForm">
     <input type="text" class="searchInput">
   </form>
+  <div class="loading-container"></div>
   <div class="weather">
     <div class='header'>
      <div class="location-address"></div>
@@ -37,12 +39,19 @@ async function showWeatherInfo (event) {
   event.preventDefault()
 
   const weatherDiv = document.querySelector('.weather')
+
   // Reset Animation state of .weather
   weatherDiv.className = 'weather'
-
   try {
+    // Testing
+    showLoading()
+    await new Promise(r => (setTimeout(() => { console.log('done'); r() }, 1000)))
+    // End: Testing
     // Display Location Address & Timezone
     const weather = await WeatherManager.getWeatherObject(`${searchInput.value}`)
+
+    // Remove Loading After Weather is loaded
+    hideLoading()
     const headerDiv = weatherDiv.querySelector('.header')
     const locationAddressDiv = headerDiv.querySelector('.location-address')
     const locationTimeZoneDiv = headerDiv.querySelector('.location-timezone')
@@ -62,11 +71,26 @@ async function showWeatherInfo (event) {
 
     initMainDailyComponent()
     weatherDiv.classList.add('show')
-    console.log(weather)
   } catch (error) {
+    loadingError('Location Not Found!')
     console.log(error)
   }
   console.log(searchInput.value)
+}
+// Loading Components
+const loadingContainer = document.querySelector('.loading-container')
+let loadingObj
+
+function showLoading () {
+  loadingContainer.innerHTML = ''
+  loadingObj = Loading.getLoadingComponents()
+  loadingContainer.append(loadingObj.element)
+}
+function hideLoading () {
+  loadingObj.hide()
+}
+function loadingError (msg) {
+  loadingObj.showError(msg)
 }
 
 // Weather Card Components
