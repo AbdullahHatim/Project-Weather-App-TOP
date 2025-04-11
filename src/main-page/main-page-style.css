@@ -106,6 +106,9 @@
       }
     }
     .main {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       height: 40%;
       font-size: 1.3em;
       color: var(--primary-text-color);
@@ -165,7 +168,6 @@
     /* Button Related*/
     border: none;
     background-color: transparent;
-    border-radius: 10px;
     outline: none;
     * {
       pointer-events: none;

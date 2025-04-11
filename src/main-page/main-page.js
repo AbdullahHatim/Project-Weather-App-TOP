@@ -148,6 +148,9 @@ function initMainDailyComponent () {
     <p class="condition">${info}</p>
     <p class="temperature" data-temp-unit="F">${temp}</p>
     `
+    // ! This will keep a Reference even after the innerHTML is changed
+    const temperatureElement = mainDiv.querySelector('.temperature')
+    temperatureReferences.push(temperatureElement)
   })
   firstDay.click()
 }
