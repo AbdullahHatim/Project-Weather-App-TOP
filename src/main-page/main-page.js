@@ -12,21 +12,10 @@ document.body.innerHTML = /* html */`
     <input type="text" class="searchInput">
   </form>
   <div class="loading-container"></div>
-  <div class="weather">
-    <div class='header'>
-     <div class="location-address"></div>
-     <div class="location-timezone"></div>
-    </div>
-   <div class="main"></div> 
-    <div class="hours-container">
-      <div class="hours"></div>
-    </div>
-    <div class="days-container">
-      <div class="days"></div>
-    </div>
-  </div>
+ <div class="weather"></div> 
 </div> 
 `
+const content = document.querySelector('#content')
 
 // Handle Form input
 const searchForm = document.querySelector('.searchForm')
@@ -37,11 +26,8 @@ searchForm.addEventListener('submit', showWeatherInfo)
 async function showWeatherInfo (event) {
   // Prevent Default Form Submit Behavior
   event.preventDefault()
-
+  resetWeatherComponent()
   const weatherDiv = document.querySelector('.weather')
-
-  // Reset Animation state of .weather
-  weatherDiv.className = 'weather'
   try {
     // Testing
     showLoading()
@@ -76,6 +62,24 @@ async function showWeatherInfo (event) {
     console.log(error)
   }
   console.log(searchInput.value)
+}
+// Weather Main Compoenent
+function resetWeatherComponent () {
+  const weather = document.querySelector('.weather')
+  weather.className = 'weather'
+  weather.innerHTML = `
+    <div class='header'>
+     <div class="location-address"></div>
+     <div class="location-timezone"></div>
+    </div>
+   <div class="main"></div> 
+    <div class="hours-container">
+      <div class="hours"></div>
+    </div>
+    <div class="days-container">
+      <div class="days"></div>
+    </div>
+  `
 }
 // Loading Components
 const loadingContainer = document.querySelector('.loading-container')
