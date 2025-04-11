@@ -73,6 +73,7 @@
     animation-fill-mode: forwards;
     animation-duration: var(--transition-time);
     transition: var(--transition-time) ease height;
+    animation-name: slideOutDown;
     &.show {
       background-color: var(--current-weather);
       animation-name: fadeIn;
@@ -193,6 +194,8 @@
     * {
     }
     img[alt='partly-cloudy-night'],
+    img[alt='rain'],
+    img[alt='cloudy'],
     img[alt='partly-cloudy-day'] {
       scale: 2;
     }

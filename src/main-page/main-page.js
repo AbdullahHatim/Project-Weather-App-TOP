@@ -161,7 +161,7 @@ function initMainDailyComponent () {
     const { formattedDate, icon, info, temp } = formattedData
     mainDiv.innerHTML = /* html */`
     <p class="time">${formattedDate}</p>
-    <span class="icon" ><img src=${icon} alt="${info}.icon"></span>
+    <span class="icon" ><img src=${icon} alt="${info}"></span>
     <p class="condition">${info}</p>
     <p class="temperature" data-temp-unit="F">${temp}</p>
     `
