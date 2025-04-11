@@ -20,11 +20,11 @@ export class WeatherManager {
   static weatherObject
 
   static fahrenheitToCelsius (fahrenheit) {
-    return (fahrenheit - 32.0) * 5.0 / 9.0
+    return Math.round((fahrenheit - 32.0) * 5.0 / 9.0)
   }
 
   static celsiusToFahrenheit (celsius) {
-    return ((celsius * 9.0 / 5.0) + 32.0)
+    return Math.round((celsius * 9.0 / 5.0) + 32.0)
   }
 
   static async getWeatherObject (location) {
