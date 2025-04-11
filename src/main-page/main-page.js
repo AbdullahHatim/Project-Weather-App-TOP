@@ -81,6 +81,7 @@ function getHourlyWeatherComponent (hour) {
   const icon = require(`@/assets/weather-icons/${hour.icon}.svg`)
   const temp = Math.round(hour.temp)
 
+  // * This is a BUTTON for consistent UI styling with Daily Component
   const button = document.createElement('button')
   button.innerHTML = /* html */`
    <p class="time" data-end="${formattedTime.end}">${formattedTime.time}</p>
@@ -90,18 +91,6 @@ function getHourlyWeatherComponent (hour) {
 
   const temperatureElement = button.querySelector('.temperature')
   temperatureReferences.push(temperatureElement)
-
-  // Publish Hourly Weather Formatted Data
-  const formattedData = {
-    formattedTime,
-    icon,
-    temp
-  }
-  button.addEventListener('click', (e) => {
-    e.preventDefault()
-    e.stopPropagation()
-    PubSub.publish(TOPICS.hourlyWeather, formattedData)
-  })
 
   button.className = 'hour'
   return button

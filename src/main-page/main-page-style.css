@@ -67,6 +67,7 @@
     width: 100%;
     border-radius: 50px;
     padding: 2em;
+    gap: 20px;
 
     animation-fill-mode: forwards;
     animation-duration: var(--transition-time);
@@ -147,12 +148,18 @@
     border: none;
     background-color: transparent;
     border-radius: 10px;
+    outline: none;
     * {
       pointer-events: none;
     }
-    &:active {
+    &:active,
+    & .active {
       background-color: color-mix(in srgb, var(--current-weather) 60%, white);
     }
+  }
+  .hour {
+    /* * Ditched .hour Events */
+    pointer-events: none;
   }
 }
 
