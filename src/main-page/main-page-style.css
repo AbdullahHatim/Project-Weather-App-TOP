@@ -3,7 +3,9 @@
     --border-color: #acacac;
     --transition-time: 700ms;
     --primary-text-color: #fff;
-    --clear-weather: rgb(57, 189, 241);
+    --secondary-text-color: #e4e4e4;
+    --clear-weather: rgb(30, 75, 126);
+    --current-weather: var(--clear-weather);
   }
 }
 @layer resets {
@@ -43,12 +45,12 @@
   width: 100%;
   border-radius: 50px;
   padding: 2em;
-  /* border: 1px black solid; */
+
   animation-fill-mode: forwards;
   animation-duration: var(--transition-time);
   transition: var(--transition-time) ease height;
   &.show {
-    background-color: var(--clear-weather);
+    background-color: var(--current-weather);
     animation-name: fadeIn;
     height: 800px;
   }
@@ -65,16 +67,27 @@
     display: flex;
     flex-direction: row-reverse;
     border-radius: 20px;
-    background-color: color-mix(in srgb, var(--clear-weather) 80%, white);
+    background-color: color-mix(in srgb, var(--current-weather) 80%, white);
     width: 100%;
     overflow-y: hidden;
     overflow-x: auto;
 
     .hour {
       color: var(--primary-text-color);
-      margin: 0.5em 1em;
-      min-width: 5em;
+      min-width: 6em;
       height: 8em;
+      .time {
+        position: relative;
+        &::after {
+          color: var(--secondary-text-color);
+          margin-left: 1ch;
+          position: absolute;
+          bottom: 0;
+          content: attr(data-end);
+          text-transform: uppercase;
+          font-size: 0.7em;
+        }
+      }
       .icon {
         display: inline-block;
         height: 20px;
@@ -83,11 +96,23 @@
       .temperature {
         position: relative;
         &::after {
+          color: var(--secondary-text-color);
           position: absolute;
           content: attr(data-temp-unit);
           text-transform: uppercase;
           font-size: 0.7em;
         }
+      }
+
+      /* Button Related*/
+      border: none;
+      background-color: transparent;
+      border-radius: 10px;
+      * {
+        pointer-events: none;
+      }
+      &:active {
+        background-color: color-mix(in srgb, var(--current-weather) 60%, white);
       }
     }
   }

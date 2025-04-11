@@ -67,22 +67,23 @@ const temperatureReferences = []
 function getHourlyWeatherComponent (hour) {
   function getAmPmFormat (datetime) {
     const [hour] = datetime.split(':')
-    if (hour > 12) return `${hour - 12}:00 PM`
-    return `${hour}:00 AM`
+    if (hour > 12) return { time: `${hour - 12}:00`, end: 'PM' }
+    return { time: `${hour}:00`, end: 'AM' }
   }
-  const div = document.createElement('div')
+  const button = document.createElement('button')
+  const formattedTime = getAmPmFormat(hour.datetime)
 
   const icon = require(`@/assets/weather-icons/${hour.icon}.svg`)
-  div.innerHTML = /* html */`
-   <p class="time">${getAmPmFormat(hour.datetime)}</p>
+  button.innerHTML = /* html */`
+   <p class="time" data-end="${formattedTime.end}">${formattedTime.time}</p>
    <span class="icon" ><img src=${icon} alt="${hour.icon}"></span>
    <p class="temperature" data-temp-unit="F">${Math.round(hour.temp)}</p>
   `
-  const temperatureElement = div.querySelector('.temperature')
+  const temperatureElement = button.querySelector('.temperature')
   temperatureReferences.push(temperatureElement)
 
-  div.className = 'hour'
-  return div
+  button.className = 'hour'
+  return button
 }
 
 // Converter Functions C -> F, F -> C
