@@ -71,14 +71,16 @@ function getHourlyWeatherComponent (hour) {
     return `${hour}:00 AM`
   }
   const div = document.createElement('div')
+
+  const icon = require(`@/assets/weather-icons/${hour.icon}.svg`)
   div.innerHTML = /* html */`
    <p class="time">${getAmPmFormat(hour.datetime)}</p>
-   <span class="icon">${hour.icon}</span>
+   <span class="icon" ><img src=${icon} alt="${hour.icon}"></span>
    <p class="temperature" data-temp-unit="F">${Math.round(hour.temp)}</p>
   `
   const temperatureElement = div.querySelector('.temperature')
   temperatureReferences.push(temperatureElement)
-  console.log(temperatureElement.dataset.tempUnit)
+
   div.className = 'hour'
   return div
 }
