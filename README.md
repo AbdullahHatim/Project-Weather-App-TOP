@@ -1,7 +1,13 @@
 # Project Weather App
 
+<style>
+  .cls{
+    font-size: 30px;
+    font-weight: bold;
+  }
+</style>
 <div align="center">
-  <p style="font-size: 30px;"><strong>Weatherly</strong></p>
+  <p class="cls">Weatherly</p>
   <img src="assets/logo.svg" width="250">
 </div>
 
