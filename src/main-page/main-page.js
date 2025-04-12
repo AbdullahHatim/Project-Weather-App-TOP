@@ -45,12 +45,10 @@ async function showWeatherInfo (event) {
     // Display Hours & Days
     const daysDiv = weatherDiv.querySelector('.days')
     const hoursDiv = weatherDiv.querySelector('.hours')
-    weather.days.forEach(day => {
-      daysDiv.append(getDailyWeatherComponent(day))
+    weather.days.forEach((day, index) => {
+      daysDiv.append(getDailyWeatherComponent(day, index))
     })
-    weather.nowPlus24Hours.forEach(hour => {
-      hoursDiv.append(getHourlyWeatherComponent(hour))
-    })
+    updateHourlyComponentsOnDailyClick(hoursDiv, weather)
 
     initMainDailyComponent()
     weatherDiv.classList.add('show')
@@ -92,10 +90,27 @@ function hideLoading () {
 function loadingError (msg) {
   loadingObj.showError(msg)
 }
+// Update Functions
+function updateHourlyComponentsOnDailyClick (hoursDiv, weather) {
+  PubSub.subscribe(TOPICS.dailyWeather, (_, formattedData) => {
+    if (formattedData.index === 0 && !!weather) {
+      hoursDiv.innerHTML = ''
+      weather.nowPlus24Hours.forEach((hour, index) => {
+        hoursDiv.append(getHourlyWeatherComponent(hour, index))
+      })
+    } else {
+      hoursDiv.innerHTML = ''
+      formattedData.hours.forEach(hour => {
+        hoursDiv.append(getHourlyWeatherComponent(hour))
+      })
+    }
+  })
+}
 
+// Weather Components
 const temperatureReferences = []
 
-function getHourlyWeatherComponent (hour) {
+function getHourlyWeatherComponent (hour, index) {
   const formattedTime = getAmPmFormat(hour.datetime)
   const icon = require(`@/assets/weather-icons/${hour.icon}.svg`)
   const temp = Math.round(hour.temp)
@@ -110,11 +125,11 @@ function getHourlyWeatherComponent (hour) {
 
   const temperatureElement = button.querySelector('.temperature')
   temperatureReferences.push(temperatureElement)
-
+  button.dataset.hourIndex = index ?? -1
   button.className = 'hour'
   return button
 }
-function getDailyWeatherComponent (day) {
+function getDailyWeatherComponent (day, index) {
   function getDateFormat (datetime) {
     // "2025-04-10"
     const monthDay = datetime.slice(-5)
@@ -142,7 +157,9 @@ function getDailyWeatherComponent (day) {
     formattedDate,
     icon,
     info,
-    temp
+    temp,
+    hours: day.hours,
+    index
   }
   button.addEventListener('click', (e) => {
     e.preventDefault()
@@ -151,6 +168,7 @@ function getDailyWeatherComponent (day) {
   })
 
   button.className = 'day'
+  button.dataset.dayIndex = index
   return button
 }
 
@@ -168,6 +186,7 @@ function initMainDailyComponent () {
     // ! This will keep a Reference even after the innerHTML is changed
     const temperatureElement = mainDiv.querySelector('.temperature')
     temperatureReferences.push(temperatureElement)
+    updateTheme(info)
   })
   firstDay.click()
 }
@@ -193,4 +212,20 @@ function getAmPmFormat (datetime) {
   const [hour] = datetime.split(':')
   if (hour > 12) return { time: `${hour - 12}:00`, end: 'PM' }
   return { time: `${hour}:00`, end: 'AM' }
+}
+
+function updateTheme (info = '') {
+  const keywords = [
+    'day',
+    'night',
+    'cloud', 'fog',
+    'rain', 'thunder',
+    'snow'
+  ]
+  const match = info.split(' ').find((word) => {
+    return keywords.find(keyword => word.match(keyword))
+  })
+  if (match) {
+    document.body.className = `weather-${match}`
+  }
 }

@@ -4,8 +4,13 @@
     --transition-time: 700ms;
     --primary-text-color: #fff;
     --secondary-text-color: #e4e4e4;
-    --clear-weather: rgb(30, 75, 126);
-    --current-weather: var(--clear-weather);
+    --night-color: rgb(26, 64, 107);
+    --day-color: rgb(76, 157, 248);
+    --cloud-color: rgb(101, 117, 134);
+    --rain-color: rgb(35, 59, 124);
+    --snow-color: rgba(100, 149, 206, 0.37);
+
+    --current-weather: var(--day-color);
   }
 }
 @layer resets {
@@ -30,6 +35,27 @@
   ::-webkit-scrollbar-thumb {
     border-radius: 20px;
     background-color: #9c9c9c46;
+  }
+}
+@layer weather-color-controller {
+  .weather-day {
+    --current-weather: var(--day-color);
+  }
+  .weather-night {
+    --current-weather: var(--night-color);
+  }
+  .weather-cloudy,
+  .weather-fog {
+    --current-weather: var(--cloud-color);
+  }
+  .weather-rain,
+  .weather-thunder {
+    --current-weather: var(--rain-color);
+  }
+  .weather-snow {
+    --current-weather: var(--snow-color);
+    --primary-text-color: #628ce7;
+    --secondary-text-color: #3f71fa;
   }
 }
 @layer main-content {
@@ -186,6 +212,9 @@
   .hour {
     /* * Ditched .hour Events */
     pointer-events: none;
+    &[data-hour-index='0'] {
+      background-color: rgba(255, 255, 0, 0.137);
+    }
   }
 }
 
@@ -196,6 +225,7 @@
     img[alt='partly-cloudy-night'],
     img[alt='rain'],
     img[alt='cloudy'],
+    img[alt='snow'],
     img[alt='partly-cloudy-day'] {
       scale: 2;
     }
