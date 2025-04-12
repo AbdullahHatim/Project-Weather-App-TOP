@@ -1,7 +1,7 @@
 # Project Weather App
 
 <div align="center">
-  <p style="font-size:2em; font-weight:bold">Weatherly</p>
+  <p style="font-size: 30px;"><strong>Weatherly</strong></p>
   <img src="assets/logo.svg" width="250">
 </div>
 
@@ -10,10 +10,10 @@ Live: [Weatherly](https://abdullahhatim.github.io/Project-Weather-App-TOP/)
 
 A weather application that displays current weather conditions and forecasts. The app features:
 
-- Location-based weather data
-- Visual weather icons for different conditions
-- Each Weather has a Unique personality
-- Responsive design
+- 🌎 Location-based weather data
+- ⛅ Visual weather icons for different conditions
+- 😊 Each weather condition has unique personality
+- 📱 Fully responsive design
 
 <small>**API KEYS ARE NOT TO BE PUT IN THE FRONT-END BUT THIS IS JUST A PET PROJECT**</small>
 
