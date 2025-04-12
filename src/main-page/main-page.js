@@ -50,7 +50,7 @@ async function showWeatherInfo (event) {
     weather.days.forEach((day, index) => {
       daysDiv.append(getDailyWeatherComponent(day, index))
     })
-    updateHourlyComponentsOnDailyClick(hoursDiv, weather)
+    updateHourlyComponentsOnDailyClick({ hoursDiv, weather })
 
     initMainDailyComponent()
     weatherDiv.classList.add('show')
@@ -99,17 +99,18 @@ function loadingError (msg) {
   loadingObj.showError(msg)
 }
 // Update Functions
-function updateHourlyComponentsOnDailyClick (hoursDiv, weather) {
+function updateHourlyComponentsOnDailyClick (data) {
   PubSub.subscribe(TOPICS.dailyWeather, (_, formattedData) => {
-    if (formattedData.index === 0 && !!weather) {
-      hoursDiv.innerHTML = ''
-      weather.nowPlus24Hours.forEach((hour, index) => {
-        hoursDiv.append(getHourlyWeatherComponent(hour, index))
+    data.hoursDiv.scrollLeft = 0
+    if (formattedData.index === 0 && !!data.weather) {
+      data.hoursDiv.innerHTML = ''
+      data.weather.nowPlus24Hours.forEach((hour, index) => {
+        data.hoursDiv.append(getHourlyWeatherComponent(hour, index))
       })
     } else {
-      hoursDiv.innerHTML = ''
+      data.hoursDiv.innerHTML = ''
       formattedData.hours.forEach(hour => {
-        hoursDiv.append(getHourlyWeatherComponent(hour))
+        data.hoursDiv.append(getHourlyWeatherComponent(hour))
       })
     }
   })
