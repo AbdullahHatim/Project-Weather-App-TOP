@@ -76,6 +76,9 @@
     ::-webkit-scrollbar-thumb {
       background-color: #5699fd46;
     }
+    img {
+      filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.205));
+    }
   }
 }
 @layer temperature-unit-controller {
@@ -279,6 +282,7 @@
     img[alt='cloudy'],
     img[alt='snow'],
     img[alt='fog'],
+    img[alt='wind'],
     img[alt='partly-cloudy-day'] {
       scale: 2;
     }
