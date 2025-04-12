@@ -45,6 +45,8 @@
 @layer weather-color-controller {
   .weather-day {
     --current-weather: var(--day-color);
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #fff570;
   }
   .weather-night {
     --current-weather: var(--night-color);
@@ -52,10 +54,14 @@
   .weather-cloudy,
   .weather-fog {
     --current-weather: var(--cloud-color);
+    --primary-text-color: #d6d6d6;
+    --secondary-text-color: #d8d8d8;
   }
   .weather-rain,
   .weather-thunder {
     --current-weather: var(--rain-color);
+    --primary-text-color: #c2d5ff;
+    --secondary-text-color: #5780f1;
   }
   .weather-snow {
     --current-weather: var(--snow-color);
