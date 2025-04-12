@@ -65,6 +65,10 @@ function resetWeatherComponent () {
     <div class='header'>
      <div class="location-address"></div>
      <div class="location-timezone"></div>
+     <div class="temp-swap-btns">
+      <button class="f">F</button>
+      <button class="c">C</button>
+     </div>
     </div>
    <div class="main"></div> 
     <div class="hours-container">
@@ -74,6 +78,7 @@ function resetWeatherComponent () {
       <div class="days"></div>
     </div>
   `
+  addTemperatureButtonEvents()
 }
 // Loading Components
 const loadingContainer = document.querySelector('.loading-container')
@@ -204,6 +209,31 @@ function setTemperatureToFahrenheit () {
     const temp = WeatherManager.celsiusToFahrenheit(element.textContent)
     element.textContent = temp
     element.dataset.tempUnit = 'F'
+  })
+}
+// Weather Temperature Control Events
+
+function addTemperatureButtonEvents () {
+//  <div class="temp-swap-btns">
+//   <button class="f active">F</button>
+//   <button class="c">C</button>
+//  </div>
+  const temperatureButtons = document.querySelector('.temp-swap-btns')
+  const celsiusButton = temperatureButtons.querySelector('.c')
+  const fahrenheitButton = temperatureButtons.querySelector('.f')
+  fahrenheitButton.className = 'f active'
+  celsiusButton.className = 'c'
+  temperatureButtons.addEventListener('click', (e) => {
+    const currentTemp = temperatureReferences[0].dataset.tempUnit
+    if (currentTemp === 'C') {
+      fahrenheitButton.className = 'f active'
+      celsiusButton.className = 'c'
+      setTemperatureToFahrenheit()
+    } else if (currentTemp === 'F') {
+      celsiusButton.className = 'c active'
+      fahrenheitButton.className = 'f'
+      setTemperatureToCelsius()
+    }
   })
 }
 

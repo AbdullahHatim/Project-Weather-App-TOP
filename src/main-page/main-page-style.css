@@ -36,6 +36,11 @@
     border-radius: 20px;
     background-color: #9c9c9c46;
   }
+  button {
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 @layer weather-color-controller {
   .weather-day {
@@ -56,6 +61,33 @@
     --current-weather: var(--snow-color);
     --primary-text-color: #628ce7;
     --secondary-text-color: #3f71fa;
+  }
+}
+@layer temperature-unit-controller {
+  .temp-swap-btns {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: fit-content;
+    margin-top: 0.5em;
+    .f,
+    .c {
+      outline: none;
+      border: none;
+      padding: 0.3em 0.7em;
+      color: #628ce7;
+      font-weight: 700;
+      &.active {
+        filter: brightness(80%);
+      }
+    }
+    .f {
+      border-radius: 20px 0px 0px 20px;
+    }
+    .c {
+      border-radius: 0px 20px 20px 0px;
+    }
   }
 }
 @layer main-content {
