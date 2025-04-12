@@ -20,6 +20,8 @@ document.body.innerHTML = /* html */`
 // Handle Form input
 const searchForm = document.querySelector('.searchForm')
 const searchInput = searchForm.querySelector('.searchInput')
+searchInput.value = 'Palestine'
+searchInput.placeholder = 'Free Palestine 🍉'
 searchInput.focus()
 searchForm.addEventListener('submit', showWeatherInfo)
 
