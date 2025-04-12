@@ -65,8 +65,7 @@
 }
 @layer temperature-unit-controller {
   .temp-swap-btns {
-    display: flex;
-    position: absolute;
+    display: none;
     left: 50%;
     transform: translate(-50%);
     max-width: fit-content;
@@ -104,10 +103,11 @@
   }
   .searchForm {
     width: 70%;
+    max-width: 700px;
     .searchInput {
       padding: 0.5em;
       width: 100%;
-      height: 2.6em;
+      height: 100px;
       border-radius: 50px;
       border: 2px solid var(--border-color);
       font-size: calc(2vw + 1.1em);
@@ -124,6 +124,7 @@
     height: 0;
     overflow: hidden;
     width: 100%;
+    max-width: 1100px;
     border-radius: 50px;
     padding: 2em;
     gap: 20px;
@@ -136,6 +137,10 @@
       background-color: var(--current-weather);
       animation-name: fadeIn;
       height: 800px;
+      .temp-swap-btns {
+        display: flex;
+        position: absolute;
+      }
       .hours-container,
       .days-container {
         background-color: rgba(255, 255, 255, 0.178);
@@ -237,7 +242,7 @@
       pointer-events: none;
     }
     &:active,
-    & .active {
+    &:hover {
       background-color: color-mix(in srgb, var(--current-weather) 60%, white);
     }
   }
@@ -258,6 +263,7 @@
     img[alt='rain'],
     img[alt='cloudy'],
     img[alt='snow'],
+    img[alt='fog'],
     img[alt='partly-cloudy-day'] {
       scale: 2;
     }
