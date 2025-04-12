@@ -30,16 +30,20 @@ async function showWeatherInfo (event) {
   const weatherDiv = document.querySelector('.weather')
   try {
     showLoading()
-    await new Promise(r => (setTimeout(r, 300)))
-    // Display Location Address & Timezone
+    // Delay to give breathing room for animations and showLoading()
+    await new Promise(resolve => (setTimeout(resolve, 300)))
+
     const weather = await WeatherManager.getWeatherObject(`${searchInput.value}`)
 
     // Remove Loading After Weather is loaded
     hideLoading()
+    // Display Location Address & Timezone
     const headerDiv = weatherDiv.querySelector('.header')
     const locationAddressDiv = headerDiv.querySelector('.location-address')
-    CountryFlag.findAndPrepend(searchInput.value, locationAddressDiv)
     const locationTimeZoneDiv = headerDiv.querySelector('.location-timezone')
+
+    // Add Country Flag
+    CountryFlag.findAndPrepend(searchInput.value, locationAddressDiv)
 
     locationAddressDiv.textContent = weather.address
     locationTimeZoneDiv.textContent = weather.timezone
@@ -52,14 +56,16 @@ async function showWeatherInfo (event) {
     })
     updateHourlyComponentsOnDailyClick({ hoursDiv, weather })
 
+    // Show First Day by Default
     initMainDailyComponent()
     weatherDiv.classList.add('show')
   } catch (error) {
+    // There are some other errors to consider but idgaf
     loadingError('Location Not Found!')
     console.log(error)
   }
 }
-// Weather Main Compoenent
+// Main Weather Component resetter reset
 function resetWeatherComponent () {
   const weather = document.querySelector('.weather')
   weather.className = 'weather'
@@ -83,7 +89,7 @@ function resetWeatherComponent () {
   addTemperatureButtonEvents()
 }
 
-// Loading Components
+// Loading controllers
 const loadingContainer = document.querySelector('.loading-container')
 let loadingObj
 
@@ -120,6 +126,12 @@ function updateHourlyComponentsOnDailyClick (data) {
 const temperatureReferences = []
 
 function getHourlyWeatherComponent (hour, index) {
+  function getAmPmFormat (datetime) {
+    const [hour] = datetime.split(':')
+    if (hour > 12) return { time: `${hour - 12}:00`, end: 'PM' }
+    return { time: `${hour}:00`, end: 'AM' }
+  }
+
   const formattedTime = getAmPmFormat(hour.datetime)
   const icon = require(`@/assets/weather-icons/${hour.icon}.svg`)
   const temp = Math.round(hour.temp)
@@ -241,12 +253,7 @@ function addTemperatureButtonEvents () {
   })
 }
 
-// Misc: getAmPmFormat
-function getAmPmFormat (datetime) {
-  const [hour] = datetime.split(':')
-  if (hour > 12) return { time: `${hour - 12}:00`, end: 'PM' }
-  return { time: `${hour}:00`, end: 'AM' }
-}
+// Misc: theme update update theme
 
 function updateTheme (info = '') {
   const keywords = [
