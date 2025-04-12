@@ -22,6 +22,7 @@ const searchForm = document.querySelector('.searchForm')
 const searchInput = searchForm.querySelector('.searchInput')
 searchInput.value = 'Palestine'
 searchInput.placeholder = 'Free Palestine 🍉'
+CountryFlag.cachePalestineFlag()
 searchInput.focus()
 searchForm.addEventListener('submit', showWeatherInfo)
 
