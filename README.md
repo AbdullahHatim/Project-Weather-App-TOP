@@ -15,7 +15,7 @@ A weather application that displays current weather conditions and forecasts. Th
 - 😊 Each weather condition has unique personality
 - 📱 Fully responsive design
 
-<small>**API KEYS ARE NOT TO BE PUT IN THE FRONT-END BUT THIS IS JUST A PET PROJECT**</small>
+<small>**API KEYS ARE NOT TO BE PUT ON THE FRONT-END BUT THIS IS JUST A PET PROJECT**</small>
 
 ## Known Bugs
 
